@@ -176,7 +176,23 @@
 
 
 
-/* nr 10 mangler */
+.rotation2 {
+    animation-name: rotation2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation2 {
+    0% {
+        transform: rotate(0deg) translate(-145%);
+        
+    }  100% {
+        transform: rotate(360deg) translate(-145%);
+        
+    }
+    
+}
 
 
 .glow {
@@ -308,15 +324,23 @@
 
 @keyframes squash {
     0% {
-        transform: translate(0%, -135%);
-    } 25% {
+        transform: translate(0%, -140%) rotateX(40deg);
+    } 24% {
         transform: translate(155%, -20%);
-    } 50% {
+    } 25% {
+        transform: translate(160%, -20%) rotateY(40deg);
+    } 49% {
         transform: translate(0%, 135%);
-    } 75% {
+    } 50% { 
+        transform: translate(0%, 150%) rotateX(40deg);
+    } 74% {
         transform: translate(-155%, 20%);
-    } 100% {
+    } 75% {
+        transform: translate(-165%, 20%) rotateY(40deg);
+    } 99% {
         transform: translate(0%, -135%);
+    } 100% {
+        transform: translate(0%, -140%) rotateX(40deg);
     }
 }
 
