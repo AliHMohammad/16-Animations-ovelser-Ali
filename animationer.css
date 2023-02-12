@@ -260,6 +260,65 @@
 }
 
 
+.bounce {
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(-130%, -150%) rotate(0deg);
+    } 10% {
+        transform: translate(-100%, 140%) rotate(80deg);
+    } 20% {
+        transform: translate(-70%, 10%) rotate(140deg);
+    } 30% {
+        transform: translate(-30%, -20%) rotate(200deg);
+    } 40% {
+        transform: translate(0%, 140%) rotate( 240deg);
+    } 50% {
+        transform: translate(30%, 30%) rotate(270deg);
+    } 60% {
+        transform: translate(70%, 140%) rotate(300deg);
+    } 70% {
+        transform: translate(100%, 100%) rotate(330deg);
+    } 80% {
+        transform: translate(130%, 140%) rotate(340deg);
+    } 90% {
+        transform: translate(140%, 130%) rotate(350deg);
+    } 100% {
+        transform: translate(150%, 140%) rotate(360deg);
+    }
+}
+
+
+
+
+
+.squash {
+    animation-name: squash;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes squash {
+    0% {
+        transform: translate(0%, -135%);
+    } 25% {
+        transform: translate(155%, -20%);
+    } 50% {
+        transform: translate(0%, 135%);
+    } 75% {
+        transform: translate(-155%, 20%);
+    } 100% {
+        transform: translate(0%, -135%);
+    }
+}
 
 
 
