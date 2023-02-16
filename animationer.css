@@ -217,7 +217,7 @@
 .blur_to_gray {
     animation-name: blur_to_gray;
     animation-duration: 2s;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
